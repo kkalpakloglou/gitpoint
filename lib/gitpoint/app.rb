@@ -1,8 +1,8 @@
 module GITPOINT
   class App < Thor
 
-    desc "LangStats --organization", "Returns git repos language statistics for a given organization"
-    method_option :organization, :type => :string, :default => "~/", :required => true, :aliases => "-p"
+    desc "langStats --organization", "Returns git repos language statistics for a given organization"
+    method_option :organization, type: :string, required: true
     def langstats
       say Rainbow("Connecting to github & fetching organization\'s repos...").bright
       repos = Git.new.fetch(:all, {org: options[:organization], visibility: 'public'})
