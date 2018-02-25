@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+require 'pathname'
+
+gem_path    = (Pathname.new(__FILE__).dirname + '..').expand_path
+source_path = (Pathname.new(__FILE__).dirname + '../lib').expand_path
+
+ENV["BUNDLE_GEMFILE"] = gem_path.to_s << "/Gemfile"
+
+$LOAD_PATH << source_path
+
+require 'bundler/setup'
+
+require 'gitpoint'
+
+GITPOINT::App.start
+ 
