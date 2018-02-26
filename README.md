@@ -1,6 +1,6 @@
 # Gitpoint
 
-Gitpoint is a simple command line app that displays usage statistics for organizations repos. Then main purpose of the gem is to fetch and analyze repository information, such as the languages used on the organization and the rate of usage, relative to each other.
+Gitpoint is a simple command line app that displays usage statistics for organizations repos. Then main purpose of the gem is to fetch and analyze repository information, such as the programming languages used on the organization and the rate of usage, relative to each other.
 
 ## Installation
 
