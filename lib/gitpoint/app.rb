@@ -16,7 +16,7 @@ module GITPOINT
       end
 
       @repositories = repos[:response]
-      raise Error, Rainbow("Github API response is empty! Process cannot continue").red
+      raise Error, Rainbow("Github API response is empty! Process cannot continue").red if @repositories.nil?
 
       fetch_repository_names
 
