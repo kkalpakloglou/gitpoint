@@ -1,6 +1,6 @@
 # Gitpoint
 
-Gitpoint is a simple command line app that displays language usage statistics for organizations repos.
+Gitpoint is a simple command line app that displays usage statistics for organizations repos. Then main purpose of the gem is to fetch and analyze repository information, such as the languages used on the organization and the rate of usage, relative to each other.
 
 ## Installation
 
@@ -20,7 +20,16 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Langstats
+
+The initial feature, implemented on Gitpoint, is langstats. Langstats provides a list of programming languages used on a given organization's public repositories. Langstats provides, also, a relative percentage of usage per language for the organization. 
+
+To extract the above information, pass the name of the organization, to --organization parameter, as below:
+
+```ruby
+gitpoint langstats --organization <organization_name>
+```
+
 
 ## Development
 
