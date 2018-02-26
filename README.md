@@ -4,17 +4,8 @@ Gitpoint is a simple command line app that displays usage statistics for organiz
 
 ## Installation
 
-Add this line to your application's Gemfile:
 
-```ruby
-gem 'gitpoint'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
+Install app from rubygems:
 
     $ gem install gitpoint
 
